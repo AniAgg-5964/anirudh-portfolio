@@ -14,9 +14,14 @@
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">My Portfolio</a>
-            <ul class="nav-links">
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" style="color:#ec4899;">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </div>
@@ -104,6 +109,13 @@
             <p>© 2026 Anirudh. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
 
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
