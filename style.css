@@ -684,19 +684,20 @@ section h2 {
     }
 
     /* ===== SKILLS ===== */
-    .skills-section {
+      .skills-section {
         margin-left: 0;
-        padding: 1rem 0 3rem 0;
+        padding: 1.5rem 0 3rem 0;
     }
 
     .skills-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
+        flex-direction: row;     
+        justify-content: left; 
+        gap: 12px;
     }
 
-    .skill-pill {
-        width: fit-content;
+     .skill-pill {
+        font-size: 0.8rem;
+        padding: 8px 14px;
     }
 
     /* ===== ABOUT PAGE ===== */
